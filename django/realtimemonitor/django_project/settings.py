@@ -25,9 +25,9 @@ ALLOWED_HOSTS = []
 
 TEMPLATES = [{
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': [os.path.join(BASE_DIR, 'templates'),],
-    'TEMPLATE_DEBUG': True,
+    'DIRS': [os.path.join(BASE_DIR, 'templates')],
     'OPTIONS': {
+        'debug': True,
         'context_processors': [
             "django.contrib.auth.context_processors.auth",
         ]
